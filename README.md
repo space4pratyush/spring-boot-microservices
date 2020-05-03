@@ -4,7 +4,7 @@
 
 
 ## Entity class
-```python
+```
 
 package com.pratyush.orderservice.entity;
 
@@ -32,11 +32,11 @@ public class Order {
     private double price;
 }
 
-
+```
 
 ## Repository Interface
 
-```python
+```
 
 package com.pratyush.orderservice.repository;
 
@@ -48,10 +48,11 @@ import org.springframework.stereotype.Repository;
 public interface OrderRepository extends JpaRepository<Order, Integer> {
 }
 
+```
 
 ## Service class
 
-```python
+```
 
 package com.pratyush.orderservice.service;
 
@@ -71,10 +72,11 @@ public class OrderService {
     }
 }
 
+```
 
 ## Controller class
 
-```python
+```
 
 package com.pratyush.orderservice.controller;
 
@@ -98,15 +100,15 @@ public class OrderController {
         return service.saveOrder(order);
     }
 }
-
+```
 
 ##create a file application.yml in resources package with following value
 
-```python
+```
 
 server:
   port:9191
   h2:
     console:
       enable:true
-
+```
